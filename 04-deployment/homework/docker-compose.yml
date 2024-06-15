@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  predict-duration-aws:
+    image: predict-duration-aws
+    env_file:
+      - .env
+    command: ["--year", "2023", "--month", "4"]

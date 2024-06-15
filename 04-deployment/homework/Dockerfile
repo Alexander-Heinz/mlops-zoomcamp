@@ -19,8 +19,8 @@ FROM agrigorev/zoomcamp-model:mlops-2024-3.10.13-slim
 
 WORKDIR /app
 
-COPY predict_duration.py .
+COPY predict_duration_aws.py .
 
-RUN pip install pandas pyarrow scikit-learn
+RUN pip install pandas pyarrow scikit-learn boto3
 
-ENTRYPOINT ["python", "predict_duration.py"]
+ENTRYPOINT ["python", "predict_duration_aws.py"]
