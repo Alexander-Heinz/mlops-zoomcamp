@@ -29,3 +29,5 @@ mlruns/
 output/
 artifacts/
 .DS_Store
+
+05-monitoring/workspace
